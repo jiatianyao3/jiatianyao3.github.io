@@ -3,15 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>归档 | Hexo</title>
+  <title>hexo + github 搭建博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="默认你下载了git bash 和node.js 1.进入git bash进入根目录，创建文件夹cd /mkdir blog 2.安装hexonpm install -g hexo 3.初始化hexo init 4.生成静态页面hexo generate 5.修改配置文件vim _config.yml修改:deploy:   type: git   repo: git@github.com:jiat">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo + github 搭建博客">
+<meta property="og:url" content="http://yoursite.com/2017/08/20/hexo + github 搭建博客/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="默认你下载了git bash 和node.js 1.进入git bash进入根目录，创建文件夹cd /mkdir blog 2.安装hexonpm install -g hexo 3.初始化hexo init 4.生成静态页面hexo generate 5.修改配置文件vim _config.yml修改:deploy:   type: git   repo: git@github.com:jiat">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-07T03:24:14.582Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="hexo + github 搭建博客">
+<meta name="twitter:description" content="默认你下载了git bash 和node.js 1.进入git bash进入根目录，创建文件夹cd /mkdir blog 2.安装hexonpm install -g hexo 3.初始化hexo init 4.生成静态页面hexo generate 5.修改配置文件vim _config.yml修改:deploy:   type: git   repo: git@github.com:jiat">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,64 +69,86 @@
   </div>
 </div>
 
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap animated rubberBand">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/09/05/hello-world/" class="archive-article-date">
-  <time class="post-time" datetime="2017-09-05T03:05:25.441Z" itemprop="datePublished">
-    <span class="post-month">9月</span><br/>
-    <span class="post-day">05</span>
-  </time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/05/hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/08/20/hexo + github 搭建博客/" class="archive-article-date">
+        <section id="main"><article id="post-hexo + github 搭建博客" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/20/hexo + github 搭建博客/" class="article-date">
   <time class="post-time" datetime="2017-08-20T03:30:00.000Z" itemprop="datePublished">
     <span class="post-month">8月</span><br/>
     <span class="post-day">20</span>
   </time>
 </a>
-      
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/20/hexo + github 搭建博客/">hexo + github 搭建博客</a>
+    <h1 class="article-title" itemprop="name">
+      hexo + github 搭建博客
     </h1>
   
 
-    </header>
+        <div>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/hexo/">hexo</a>
   </div>
+
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>默认你下载了git bash 和node.js</p>
+<p>1.进入git bash<br>进入根目录，创建文件夹<br>cd /<br>mkdir blog</p>
+<p>2.安装hexo<br>npm install -g hexo</p>
+<p>3.初始化<br>hexo init</p>
+<p>4.生成静态页面<br>hexo generate</p>
+<p>5.修改配置文件<br>vim _config.yml<br>修改:<br>deploy:<br>   type: git<br>   repo: git@github.com:jiatianyao3/jiatianyao3.github.io.git<br>   branch: master</p>
+<p>修改账号<br>git config –global user.name jiatianyao3<br>git config –global user.email 258409707@qq.com</p>
+<p>小问题：因为机器原先有github，想要用新的账户需要<br>新生成秘钥<br>ssh-keygen -t rsa -C “258409707@qq.com”<br> ssh-add ~/.ssh/id_rsa_work<br>如果报错，先<br> eval <code>ssh-agent</code><br>再ssh-add id_rsa-work</p>
+<p>在.ssh<br>目录创建文件<br>touch config<br>输入;<br>Host github.com<br> HostName github.com<br> User git<br> IdentityFile C:/Users/Administrator/.ssh/id_rsa</p>
+<h1 id="second-user-second-mail-com"><a href="#second-user-second-mail-com" class="headerlink" title="second user(second@mail.com)"></a>second user(second@mail.com)</h1><h1 id="建一个github别名，新建的帐号使用这个别名做克隆和更新"><a href="#建一个github别名，新建的帐号使用这个别名做克隆和更新" class="headerlink" title="建一个github别名，新建的帐号使用这个别名做克隆和更新"></a>建一个github别名，新建的帐号使用这个别名做克隆和更新</h1><p>Host github2<br> HostName github.com<br> User git<br> IdentityFile C:/Users/Administrator/.ssh/id_rsa-work</p>
+<p>添加完github账号就可以发布了<br>hexo d</p>
+<p>启动<br>hexo server –config custom.yml</p>
+<p>问题：<br>1.如果想直接用hexo server需要<br>npm install hexo-server –save</p>
+<p>2.如果发现打不开网址，可能你的4000端口占用，需要换个端口<br>hexo server -p 5000</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/08/20/hexo + github 搭建博客/" data-id="cj79w32wd0000oci1zs98tjnr" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/09/05/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
 
 
 </section>
